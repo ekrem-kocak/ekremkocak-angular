@@ -3,4 +3,8 @@ export const ROUTE_CONFIG = {
     name: 'Signal',
     routerLink: '',
   },
+  COMPUTED: {
+    name: 'Computed',
+    routerLink: 'computed',
+  },
 };
