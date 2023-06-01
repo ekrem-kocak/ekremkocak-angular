@@ -30,7 +30,8 @@
               "projects/angular-v16/src/assets"
             ],
             "styles": [
-              "projects/angular-v16/src/styles.scss"
+              "projects/angular-v16/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -93,7 +94,8 @@
               "projects/angular-v16/src/assets"
             ],
             "styles": [
-              "projects/angular-v16/src/styles.scss"
+              "projects/angular-v16/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           }
