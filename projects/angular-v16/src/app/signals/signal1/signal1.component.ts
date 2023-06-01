@@ -4,7 +4,7 @@ import { Component, signal } from '@angular/core';
   selector: 'app-signal1',
   template: `
     <div class="d-flex flex-column align-items-center">
-      <h1>{{ count() }}</h1>
+      <h1>Count : {{ count() }}</h1>
       <div class="d-flex gap-2">
         <button class="btn btn-warning" (click)="decrement()">decrement</button>
         <button class="btn btn-danger" (click)="reset()">reset</button>
