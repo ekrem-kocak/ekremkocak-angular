@@ -6,6 +6,7 @@ import { SIGNALS_ROUTES } from './signals.routes';
 import { Signal1Component } from './signal1/signal1.component';
 import { SignalsComponent } from './signals.component';
 import { UntrackedComponent } from './untracked/untracked.component';
+import { IsEqualComponent } from './is-equal/is-equal.component';
 
 const routes: Route[] = [
   {
@@ -25,6 +26,10 @@ const routes: Route[] = [
       {
         path: SIGNALS_ROUTES.Untracked.routerLink,
         component: UntrackedComponent,
+      },
+      {
+        path: SIGNALS_ROUTES.IS_EQUAL.routerLink,
+        component: IsEqualComponent,
       },
     ],
   },

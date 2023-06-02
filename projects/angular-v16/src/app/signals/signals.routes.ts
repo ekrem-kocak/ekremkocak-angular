@@ -15,4 +15,8 @@ export const SIGNALS_ROUTES = {
     name: 'Untracked',
     routerLink: 'untracked',
   },
+  IS_EQUAL: {
+    name: 'isEqual',
+    routerLink: 'is-equal',
+  },
 };
