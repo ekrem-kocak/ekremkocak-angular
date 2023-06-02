@@ -3,4 +3,8 @@ export const EFFECT_ROUTES = {
     name: 'Basic Effect',
     routerLink: 'basic-effect',
   },
+  EFFECT_CLEANUP: {
+    name: 'Effect Cleanup',
+    routerLink: 'effect-cleanup',
+  },
 };
