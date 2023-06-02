@@ -5,6 +5,7 @@ import { ComputedComponent } from './computed/computed.component';
 import { SIGNALS_ROUTES } from './signals.routes';
 import { Signal1Component } from './signal1/signal1.component';
 import { SignalsComponent } from './signals.component';
+import { UntrackedComponent } from './untracked/untracked.component';
 
 const routes: Route[] = [
   {
@@ -20,6 +21,10 @@ const routes: Route[] = [
         path: SIGNALS_ROUTES.Effect.routerLink,
         loadChildren: () =>
           import('./effect/effect.module').then((m) => m.EffectModule),
+      },
+      {
+        path: SIGNALS_ROUTES.Untracked.routerLink,
+        component: UntrackedComponent,
       },
     ],
   },

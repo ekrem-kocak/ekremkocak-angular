@@ -11,4 +11,8 @@ export const SIGNALS_ROUTES = {
     name: 'Effect',
     routerLink: 'effect',
   },
+  Untracked: {
+    name: 'Untracked',
+    routerLink: 'untracked',
+  },
 };
