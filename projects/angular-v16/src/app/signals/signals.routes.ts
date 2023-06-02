@@ -1,4 +1,4 @@
-export const ROUTE_CONFIG = {
+export const SIGNALS_ROUTES = {
   SIGNAL1: {
     name: 'Signal',
     routerLink: '',
@@ -6,5 +6,9 @@ export const ROUTE_CONFIG = {
   COMPUTED: {
     name: 'Computed',
     routerLink: 'computed',
+  },
+  Effect: {
+    name: 'Effect',
+    routerLink: 'effect',
   },
 };

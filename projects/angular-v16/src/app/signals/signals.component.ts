@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ROUTE_CONFIG } from './route-config';
+import { SIGNALS_ROUTES } from './signals.routes';
 
 @Component({
   selector: 'app-signals',
@@ -22,7 +22,9 @@ import { ROUTE_CONFIG } from './route-config';
                 <a
                   class="nav-link"
                   routerLinkActive="active"
-                  [routerLinkActiveOptions]="{ exact: true }"
+                  [routerLinkActiveOptions]="{
+                    exact: route.routerLink === '' ? true : false
+                  }"
                   [routerLink]="route.routerLink"
                   >{{ route.name }}</a
                 >
@@ -41,6 +43,6 @@ export class SignalsComponent {
   routes: { name: string; routerLink: string }[];
 
   constructor() {
-    this.routes = Object.values(ROUTE_CONFIG);
+    this.routes = Object.values(SIGNALS_ROUTES);
   }
 }
