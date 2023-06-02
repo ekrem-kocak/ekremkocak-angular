@@ -1,7 +1,7 @@
 import { Component, computed, effect, signal } from '@angular/core';
 
 @Component({
-  selector: 'app-effect-cleanup',
+  selector: 'app-set-signal-value',
   template: ` <div class="d-flex flex-column align-items-center">
     <h1>Count : {{ count() }}</h1>
     <div class="d-flex gap-2">
@@ -12,25 +12,26 @@ import { Component, computed, effect, signal } from '@angular/core';
   </div>`,
   standalone: true,
 })
-export class EffectCleanupComponent {
+export class SetSignalValueComponent {
   count = signal(0);
+  isBig = signal(false);
+
+  // best practice
+  _isBig = computed(() => {
+    this.count() > 10 ? true : false;
+  });
 
   constructor() {
+    // not recommended
     effect(
-      (onCleanup) => {
-        // onCleanup works when signal fire or destroy
-        const count = this.count();
-
-        const timer = setTimeout(() => {
-          console.log(`1 second ago, the count became ${count}`);
-        }, 1000);
-
-        onCleanup(() => {
-          console.log('clean timer');
-          clearTimeout(timer);
-        });
+      () => {
+        if (this.count() > 10) {
+          this.isBig.set(true);
+        } else {
+          this.isBig.set(false);
+        }
       },
-      { manualCleanup: true }
+      { allowSignalWrites: true }
     );
   }
 

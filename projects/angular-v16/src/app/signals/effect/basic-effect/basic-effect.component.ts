@@ -1,7 +1,7 @@
 import { Component, computed, effect, signal } from '@angular/core';
 
 @Component({
-  selector: 'app-effect',
+  selector: 'app-basic-effect',
   template: ` <div class="d-flex flex-column align-items-center">
     <h1>Count : {{ count() }}</h1>
     <h2>Double Count : {{ doubleCount() }}</h2>

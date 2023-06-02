@@ -7,4 +7,8 @@ export const EFFECT_ROUTES = {
     name: 'Effect Cleanup',
     routerLink: 'effect-cleanup',
   },
+  SET_SIGNAL_VALUE: {
+    name: 'Set Signal Value',
+    routerLink: 'set-signal-value',
+  },
 };
