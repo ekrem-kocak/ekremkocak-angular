@@ -19,4 +19,8 @@ export const SIGNALS_ROUTES = {
     name: 'isEqual',
     routerLink: 'is-equal',
   },
+  COUNTER_EXAMPLE: {
+    name: 'Counter Example',
+    routerLink: 'counter-example',
+  },
 };
