@@ -23,4 +23,8 @@ export const SIGNALS_ROUTES = {
     name: 'Counter Example',
     routerLink: 'counter-example',
   },
+  MUTATE: {
+    name: 'Todo Example (Mutate)',
+    routerLink: 'mutate',
+  },
 };
